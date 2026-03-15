@@ -1,5 +1,5 @@
 {
- "extends": ["stylelint-config-recommended-scss"],
+ "extends": ["stylelint-config-sass-guidelines"],
  "rules": {
   "selector-max-id": 0,
   "selector-no-qualifying-type": [
