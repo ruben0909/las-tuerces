@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+@function rem($pixels, $base: 16px) {
+  @if math.unit($pixels) != 'px' {
+    @error 'rem($pixels) expects a pixel value.';
+  }
+
+  @if math.unit($base) != 'px' {
+    @error 'rem($base) expects a pixel value.';
+  }
+
+  @return math.div($pixels, $base) * 1rem;
+}
