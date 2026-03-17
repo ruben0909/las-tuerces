@@ -1,12 +1,38 @@
-@use "sass:color";
+@use 'sass:color';
 
-$font-family-sans-serif:
-  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family-sans-serif: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$font-family-serif: 'Georgia', 'Times New Roman', serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$color-forest-900: #1f3325;
+$color-forest-700: #32573f;
+$color-forest-500: #5f8369;
+$color-stone-200: #ebe4d5;
+$color-stone-100: #f6f2e9;
+$color-earth-500: #a66d3b;
+$color-sky-100: #d8e7ee;
+$color-white: #fff;
+$color-text: #223227;
+$color-muted: color.scale($color-text, $lightness: 35%);
 
-$mqMinWidth: 420px;
+$site-bg: linear-gradient(170deg, $color-sky-100 0%, $color-stone-100 45%, $color-stone-200 100%);
+$surface: rgba($color-white, 0.84);
+$surface-strong: rgba($color-white, 0.93);
+
+$space-1: 0.5rem;
+$space-2: 0.75rem;
+$space-3: 1rem;
+$space-4: 1.5rem;
+$space-5: 2rem;
+$space-6: 3rem;
+
+$radius-sm: 0.5rem;
+$radius-md: 0.9rem;
+$radius-lg: 1.3rem;
+
+$shadow-soft: 0 20px 45px -28px rgba(28, 39, 31, 0.5), 0 8px 18px -10px rgba(28, 39, 31, 0.38);
+
+$container-max-width: 72rem;
+
+$bp-sm: 30rem;
+$bp-md: 48rem;
+$bp-lg: 64rem;
