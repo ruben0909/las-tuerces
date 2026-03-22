@@ -11,18 +11,28 @@
   <body>
     <include src="./views/header.html"></include>
     <main class="site-main" id="inicio">
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="hero__kicker">Geoparque UNESCO Las Loras</p>
+          <h1 class="hero__title" id="hero-title">Las Tuerces, piedra, cielo y tiempo</h1>
+          <p class="hero__description">
+            En el norte de Palencia, Las Tuerces dibuja un laberinto de roca
+            caliza modelado por millones de años de erosión. Es un paisaje
+            singular para caminar con calma entre pasadizos, miradores y formas
+            geológicas sorprendentes.
+          </p>
+          <a class="hero__cta" href="#rutas">Planifica tu ruta</a>
+        </div>
+        <figure class="hero__media">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Las_tuerces_01.jpg/1280px-Las_tuerces_01.jpg"
+            alt="Formaciones rocosas de Las Tuerces al atardecer"
+            loading="eager"
+            width="1200"
+            height="800"
+          />
+        </figure>
+      </section>
       </p>
     </div>
     </main>

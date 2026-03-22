@@ -100,8 +100,107 @@ img {
   background-color: rgba(50, 87, 63, 0.16);
   outline: none;
 }
+
+.site-main {
+  width: min(100% - variables.$space-5, variables.$container-max-width);
+  margin-inline: auto;
+  padding-block: variables.$space-5 variables.$space-6;
+}
+
+.hero {
+  display: grid;
+  gap: variables.$space-4;
+}
+
+.hero__kicker {
+  margin: 0;
+  color: variables.$color-forest-700;
+  letter-spacing: fn.rem(1px);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: fn.rem(12px);
+}
+
+.hero__title {
+  margin: variables.$space-2 0 variables.$space-3;
   font-family: variables.$font-family-serif;
-  font-size: 24px;
+  font-size: clamp(fn.rem(30px), 7vw, fn.rem(52px));
+  line-height: 1.1;
+  color: variables.$color-forest-900;
+}
+
+.hero__description {
+  margin: 0;
+  max-width: 60ch;
+  color: variables.$color-muted;
+}
+
+.hero__cta {
+  display: inline-flex;
+  margin-top: variables.$space-4;
+  align-items: center;
+  justify-content: center;
+  min-height: fn.rem(46px);
+  padding-inline: variables.$space-4;
+  border-radius: 99rem;
+  background-color: variables.$color-earth-500;
+  color: variables.$color-white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hero__cta:hover,
+.hero__cta:focus-visible {
+  background-color: variables.$color-forest-700;
+  outline: none;
+}
+
+.hero__media {
+  margin: 0;
+  border-radius: variables.$radius-lg;
+  overflow: hidden;
+  box-shadow: variables.$shadow-soft;
+}
+
+.hero__media img {
+  min-height: fn.rem(240px);
+  object-fit: cover;
+}
+
+.section {
+  margin-top: variables.$space-6;
+  padding: variables.$space-4;
+  border-radius: variables.$radius-lg;
+  background-color: variables.$surface;
+  box-shadow: variables.$shadow-soft;
+}
+
+.section__header {
+  margin-bottom: variables.$space-4;
+}
+
+.section__title {
+  margin: 0;
+  font-family: variables.$font-family-serif;
+  font-size: clamp(fn.rem(26px), 6vw, fn.rem(36px));
+  color: variables.$color-forest-900;
+}
+
+.section__intro {
+  margin: variables.$space-2 0 0;
+  color: variables.$color-muted;
+  max-width: 66ch;
+}
+
+.section--tips {
+  background: linear-gradient(160deg, rgba(80, 119, 94, 0.2), rgba(236, 219, 193, 0.75));
+}
+
+.feature-grid {
+  display: grid;
+  gap: variables.$space-3;
+}
+
   font-weight: 700;
   color: variables.$uoc-corporate;
 
