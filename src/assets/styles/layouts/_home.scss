@@ -201,11 +201,101 @@ img {
   gap: variables.$space-3;
 }
 
-  font-weight: 700;
-  color: variables.$uoc-corporate;
+.feature-card {
+  padding: variables.$space-3;
+  border-radius: variables.$radius-md;
+  border: 1px solid rgba(50, 87, 63, 0.18);
+  background-color: variables.$surface-strong;
+}
 
-  @media (min-width: variables.$mqMinWidth) {
-    font-size: 36px;
+.feature-card__title {
+  margin: 0 0 variables.$space-2;
+  font-size: fn.rem(21px);
+  color: variables.$color-forest-900;
+}
+
+.feature-card__text {
+  margin: 0;
+  color: variables.$color-muted;
+}
+
+.route-list {
+  display: grid;
+  gap: variables.$space-3;
+}
+
+.route-card {
+  padding: variables.$space-3;
+  border-radius: variables.$radius-md;
+  border: 1px dashed rgba(31, 51, 37, 0.26);
+  background-color: variables.$surface-strong;
+}
+
+.route-card__meta {
+  margin: 0;
+  font-size: fn.rem(13px);
+  text-transform: uppercase;
+  letter-spacing: fn.rem(0.7px);
+  color: variables.$color-forest-700;
+  font-weight: 700;
+}
+
+.route-card__title {
+  margin: variables.$space-2 0;
+  color: variables.$color-forest-900;
+  font-size: fn.rem(22px);
+}
+
+.route-card__text {
+  margin: 0;
+  color: variables.$color-muted;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: variables.$space-3;
+}
+
+.gallery-grid__item {
+  margin: 0;
+  border-radius: variables.$radius-md;
+  overflow: hidden;
+}
+
+.gallery-grid__item img {
+  width: 100%;
+  height: fn.rem(230px);
+  object-fit: cover;
+}
+
+.tips-list {
+  margin: 0;
+  padding-left: variables.$space-4;
+  display: grid;
+  gap: variables.$space-2;
+}
+
+.tips-list__item {
+  color: variables.$color-text;
+  font-weight: 500;
+}
+
+.contact-panel {
+  display: grid;
+  gap: variables.$space-3;
+}
+
+.contact-panel__text {
+  margin: 0;
+  color: variables.$color-muted;
+}
+
+.contact-panel__link {
+  color: variables.$color-forest-700;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: fn.rem(3px);
+}
   }
 }
 
