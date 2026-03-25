@@ -296,11 +296,110 @@ img {
   text-decoration-thickness: 2px;
   text-underline-offset: fn.rem(3px);
 }
+
+.site-footer {
+  margin-top: variables.$space-6;
+  padding: variables.$space-5 variables.$space-3 variables.$space-4;
+  color: variables.$color-stone-100;
+  background-color: variables.$color-forest-900;
+}
+
+.site-footer__inner {
+  width: min(100% - variables.$space-4, variables.$container-max-width);
+  margin-inline: auto;
+  display: grid;
+  gap: variables.$space-4;
+}
+
+.site-footer__block {
+  min-width: 0;
+}
+
+.site-footer__title {
+  margin: 0 0 variables.$space-2;
+  font-family: variables.$font-family-serif;
+  font-size: fn.rem(21px);
+  color: variables.$color-white;
+}
+
+.site-footer__text {
+  margin: 0;
+  color: rgba(246, 242, 233, 0.88);
+}
+
+.site-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: variables.$space-2;
+}
+
+.site-footer__link {
+  display: inline-flex;
+  align-items: center;
+  gap: variables.$space-2;
+  color: rgba(246, 242, 233, 0.92);
+  text-decoration: none;
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus-visible {
+  color: variables.$color-white;
+  text-decoration: underline;
+  outline: none;
+}
+
+.site-footer__copyright {
+  width: min(100% - variables.$space-4, variables.$container-max-width);
+  margin: variables.$space-4 auto 0;
+  padding-top: variables.$space-3;
+  border-top: 1px solid rgba(246, 242, 233, 0.2);
+  font-size: fn.rem(13px);
+  color: rgba(246, 242, 233, 0.8);
+}
+
+@media (min-width: variables.$bp-md) {
+  .site-header__menu-toggle {
+    display: none;
+  }
+
+  .site-header__nav {
+    display: block;
+    position: static;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .site-header__list {
+    grid-auto-flow: column;
+    gap: variables.$space-1;
+  }
+
+  .hero {
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+    gap: variables.$space-5;
+  }
+
+  .feature-grid,
+  .route-list,
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .site-footer__inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+@media (min-width: variables.$bp-lg) {
+  .section {
+    padding: variables.$space-5;
+  }
+
+  .site-footer__inner {
+    grid-template-columns: 1.3fr repeat(3, minmax(0, 1fr));
+  }
 }
