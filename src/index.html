@@ -23,15 +23,17 @@
           </p>
           <a class="hero__cta" href="#rutas">Planifica tu ruta</a>
         </div>
-        <figure class="hero__media">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Las_tuerces_01.jpg/1280px-Las_tuerces_01.jpg"
-            alt="Formaciones rocosas de Las Tuerces al atardecer"
-            loading="eager"
-            width="1200"
+        <picture  class="hero__media">
+          <source
+          srcset="./assets/images/pictures/Las_tuerces_01.jpg"
+          type="image/jpeg"
+        />
+        <img
+          src="./assets/images/pictures/Las_tuerces_01.jpg"
+          alt="Formaciones rocosas de Las Tuerces al atardecer"   width="1200"
             height="800"
-          />
-        </figure>
+        />
+        </picture>
       </section>
 
       <section class="section" id="formacion" aria-labelledby="formacion-title">
@@ -108,34 +110,49 @@
         <div class="section__header">
           <h2 class="section__title" id="galeria-title">Galería de Las Tuerces</h2>
         </div>
-        <div class="gallery-grid">
-          <figure class="gallery-grid__item">
+        <div class="gallery-grid">            
+          <picture class="gallery-grid__item">
+            <source
+            srcset="./assets/images/pictures/Las_tuerces_02.jpg"
+            type="image/jpeg"
+          />
+        
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Las_tuerces_02.jpg/1280px-Las_tuerces_02.jpg"
+              src="./assets/images/pictures/Las_tuerces_02.jpg"
               alt="Senderista entre rocas en Las Tuerces"
               loading="lazy"
               width="900"
               height="600"
             />
-          </figure>
-          <figure class="gallery-grid__item">
+        </picture>      
+          <picture class="gallery-grid__item">
+            <source
+            srcset="./assets/images/pictures/Las_tuerces_03.jpg"
+            type="image/jpeg"
+          />
+        
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Las_tuerces_03.jpg/1280px-Las_tuerces_03.jpg"
-              alt="Detalle de formaciones calizas en Las Tuerces"
+              src="./assets/images/pictures/Las_tuerces_03.jpg"
+              alt="Senderista entre rocas en Las Tuerces"
               loading="lazy"
               width="900"
               height="600"
             />
-          </figure>
-          <figure class="gallery-grid__item">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Las_tuerces_04.jpg/1280px-Las_tuerces_04.jpg"
+        </picture>
+          <picture class="gallery-grid__item">
+            <source
+            srcset="./assets/images/pictures/Las_tuerces_04.jpg"
+            type="image/jpeg"
+          />
+        
+               <img
+              src="./assets/images/pictures/Las_tuerces_04.jpg"
               alt="Vista general de Las Tuerces con cielo azul"
               loading="lazy"
               width="900"
               height="600"
             />
-          </figure>
+        </picture>
         </div>
       </section>
 
