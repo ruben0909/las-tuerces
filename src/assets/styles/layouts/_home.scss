@@ -297,6 +297,52 @@ img {
   text-underline-offset: fn.rem(3px);
 }
 
+.contact-panel__location {
+  padding: variables.$space-3;
+  border: 1px solid rgba(50, 87, 63, 0.18);
+  border-radius: variables.$radius-md;
+  background-color: variables.$surface-strong;
+}
+
+.contact-panel__title {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: variables.$space-2;
+  font-size: fn.rem(21px);
+  color: variables.$color-forest-900;
+}
+
+.contact-panel__map {
+  margin-top: variables.$space-3;
+  border-radius: variables.$radius-sm;
+  overflow: hidden;
+  box-shadow: variables.$shadow-soft;
+}
+
+.contact-panel__map-frame {
+  display: block;
+  width: 100%;
+  min-height: fn.rem(260px);
+  border: 0;
+}
+
+.contact-panel__map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: variables.$space-2;
+  margin-top: variables.$space-3;
+  color: variables.$color-forest-700;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: fn.rem(3px);
+}
+
+.contact-panel__map-link:hover,
+.contact-panel__map-link:focus-visible {
+  color: variables.$color-forest-900;
+}
+
 .site-footer {
   margin-top: variables.$space-6;
   padding: variables.$space-5 variables.$space-3 variables.$space-4;
