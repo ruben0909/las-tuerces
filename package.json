@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.13.0",
+  "name": "las-tuerces",
+  "version": "1.0.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Sitio web de Las Tuerces.",
   "scripts": {
     "parcel:serve": "parcel -p 8123 --target web",
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
@@ -10,7 +10,7 @@
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
-    "stylelint": "npm run stylelint src/**/*.scss"
+    "stylelint": "stylelint src/**/*.scss"
   },
   "targets": {
     "web": {
@@ -27,8 +27,8 @@
     "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Ruben Infante",
+    "email": "ruben090988@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
