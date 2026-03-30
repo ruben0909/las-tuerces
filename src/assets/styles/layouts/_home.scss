@@ -93,11 +93,12 @@ img {
   text-decoration: none;
   border-radius: variables.$radius-sm;
   font-weight: 600;
+
   &:hover,
   &:focus-visible {
-  background-color: rgba(50, 87, 63, 0.16);
-  outline: none;
-}
+    background-color: rgba(50, 87, 63, 0.16);
+    outline: none;
+  }
 }
 
 
