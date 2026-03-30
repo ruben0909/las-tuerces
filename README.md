@@ -1,67 +1,88 @@
-# UOC Boilerplate
+# Las Tuerces
 
-UOC Boilerplate is a starter template for the HTML and CSS Tools courses from the [Master's Program in Multimedia Applications](https://estudis.uoc.edu/ca/masters-universitaris/aplicacions-multimedia/presentacio) and the [Master's Program in Web App and Website Development](https://estudis.uoc.edu/ca/masters-universitaris/desenvolupament-llocs-aplicacions-web/presentacio) at the [Universitat Oberta de Catalunya](https://www.uoc.edu). It aims to provide a basic, modern frontend web development starter pack based on Parcel and including a Sass compiler, an ES6 transpiler, minifiers, an image transformer, and development tools.
+Sitio web academico sobre el Paisaje Natural de Las Tuerces (Palencia), desarrollado para la asignatura Herramientas HTML y CSS II.
 
-This is the 3.x version of UOC Boilerplate, available since the UOC 2020-2 semester.
+El proyecto parte de UOC Boilerplate, pero su contenido, estructura visual y funcionalidades estan adaptados a una landing informativa y de divulgacion turistica.
 
-## Requirements
+## Objetivo
 
-[Node.js](http://nodejs.org/) >= 18.x
+Crear una web de una sola pagina que presente Las Tuerces con una experiencia clara y responsive, incluyendo:
 
-## Getting started
+- Hero de bienvenida con llamada a la accion.
+- Secciones de formacion geologica, rutas y consejos de visita.
+- Galeria fotografica.
+- Bloque de informacion util con mapa interactivo.
+- Navegacion adaptable a movil y escritorio.
 
-Clone this repository with `git clone`, or download a .zip file using the top right green button.
+## Tecnologias
 
-Using the Terminal, navigate to the project folder and run `npm install`.
+- HTML5 con parciales mediante PostHTML (`header.html` y `footer.html`).
+- SCSS modular con variables, funciones y layout principal.
+- JavaScript ES modules para interaccion de menu y logica del mapa.
+- Leaflet para el mapa interactivo de localizacion.
+- Font Awesome para iconografia.
+- Parcel 2 para entorno de desarrollo y build de produccion.
 
-## Features
+## Requisitos
 
-- Uses [Parcel v2](https://parceljs.org) module bundler.
-- NPM scripts for fast development and production build (see Commands below).
+- Node.js 18 o superior.
+- npm.
 
-### Stylesheets
+## Puesta en marcha
 
-- [Sass/SCSS](https://sass-lang.com) to CSS compilation (`@parcel/transformer-sass`).
-- Transpilation of modern CSS synthax to support older bvrowsers, based on `browserslist`, including vendor prefixing and synthax lowering, with [PostCSS](https://postcss.org/) (`@parcel/transformer-postcss`).
-- Minification and optimization of CSS files on production builds with [`lightningcss`](https://github.com/parcel-bundler/lightningcss) (`@parcel/optimizer-css`).
+1. Instala dependencias:
 
-### HTML
+   ```bash
+   npm install
+   ```
 
-- Minification and optimization of CSS files on production builds [`htmlnano`](https://github.com/posthtml/htmlnano) (`@parcel/optimizer-htmlnano`).
-- [PostHTML](https://github.com/posthtml/posthtml) (`@parcel/transformer-posthtml`) features:
-  - Include partial HTML files with [`posthtml-include`](https://github.com/posthtml/posthtml-include).
+2. Inicia el entorno de desarrollo:
 
-### Scripts
+   ```bash
+   npm run dev
+   ```
 
-- Transpilation of modern JavaScript synthax to support older browsers, based on `browserslist`, with with [Babel](https://babeljs.io/) (`@parcel/transformer-babel`).
-- Minification and optimization of JS code with [SWC](https://swc.rs/) (`@parcel/optimizer-swc`).
+3. Abre la URL local mostrada por Parcel (servidor en el puerto `8123`).
 
-### Images
+## Scripts disponibles
 
-- Image transformation with [`sharp`](https://sharp.pixelplumbing.com/) ([`@parcel/transformer-image`](https://parceljs.org/recipes/image/)).
+| Script | Descripcion |
+| --- | --- |
+| `npm run dev` | Limpia caches y lanza servidor de desarrollo en caliente. |
+| `npm run build` | Genera version optimizada para produccion en `dist/`. |
+| `npm run clean` | Elimina `dist/` y caches de Parcel. |
+| `npm run stylelint` | Ejecuta lint sobre todos los archivos SCSS. |
+| `npm run test` | Comprobacion basica de entorno (mensaje de estado). |
 
-### Development
+## Estructura principal
 
-- Development server launch and live reloading on file changes.
-- Friendly error reporting.
+```text
+src/
+  index.html
+  views/
+    header.html
+    footer.html
+  assets/
+    scripts/
+      main.js
+    styles/
+      main.scss
+      _variables.scss
+      _functions.scss
+      layouts/
+        _home.scss
+    images/
+      pictures/
+      markers/
+```
 
-## How to use this boilerplate
+## Funcionalidades destacadas
 
-Content lives inside the `src/` folder. If you do not want to change the configuration or are unsure about what you are doing, do not edit files outside the `src/` folder.
+- Menu movil con boton hamburguesa y cierre automatico al cambiar de seccion.
+- Navegacion por anclas con desplazamiento suave.
+- Mapa Leaflet con marcador personalizado y enlace externo a Google Maps.
+- Diseno responsive con componentes reutilizables en SCSS.
 
-Always run the following commands during the development stage and for production builds. Please note that it is expected that all projects built with this boilerplate are compiled using `npm run build` before they are published.
+## Autor
 
-### Commands
-
-| Command         | Description                                                                                                                                                                                                                                                                                                                                                         |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run dev`   | Runs a local web server for development and opens the browser to display it. Automatically compiles styles and scripts whenever a file in `src/` is changed, and live reloads the browser. This is what _must be run_ on the development stage.                                                                                                                     |
-| `npm run build` | Compiles and minifies and optimizes the files in the assets folder. The generated compiled and optimized files are located in the `dist/` folder. This is what _must be run_ before publishing the project. This is also the build command to be run by external deployment services such as Netlify. The publishable files are then located in the `dist/` folder. |
-| `npm run clean` | Deletes the current `/dist` folder and cache folders.                                                                                                                                                                                                                                                                                                               |
-| `npm run test`  | Displays a success message if everything is working as expected.                                                                                                                                                                                                                                                                                                    |
-
-## Need help? / Want to help out?
-
-Feel free to create a [new issue](https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues/new/) or drop me a line at jorditarrida@uoc.edu.
-
-Are you using this Boilerplate for your projects or for educational purposes? I would love to hear about it!
+Ruben Infante
