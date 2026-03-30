@@ -93,13 +93,14 @@ img {
   text-decoration: none;
   border-radius: variables.$radius-sm;
   font-weight: 600;
-}
-
-.site-header__link:hover,
-.site-header__link:focus-visible {
+  &:hover,
+  &:focus-visible {
   background-color: rgba(50, 87, 63, 0.16);
   outline: none;
 }
+}
+
+
 
 .site-main {
   width: min(100% - variables.$space-5, variables.$container-max-width);
@@ -147,13 +148,14 @@ img {
   color: variables.$color-white;
   text-decoration: none;
   font-weight: 700;
+  
+  &:hover,
+  &:focus-visible {
+    background-color: variables.$color-forest-700;
+    outline: none;
+  }
 }
 
-.hero__cta:hover,
-.hero__cta:focus-visible {
-  background-color: variables.$color-forest-700;
-  outline: none;
-}
 
 .hero__media {
   margin: 0;
@@ -290,12 +292,6 @@ img {
   color: variables.$color-muted;
 }
 
-.contact-panel__link {
-  color: variables.$color-forest-700;
-  font-weight: 700;
-  text-decoration-thickness: 2px;
-  text-underline-offset: fn.rem(3px);
-}
 
 .contact-panel__location {
   padding: variables.$space-3;
@@ -336,12 +332,14 @@ img {
   font-weight: 700;
   text-decoration-thickness: 2px;
   text-underline-offset: fn.rem(3px);
+
+  &:hover,
+  &:focus-visible {
+    color: variables.$color-forest-900;
+  }
 }
 
-.contact-panel__map-link:hover,
-.contact-panel__map-link:focus-visible {
-  color: variables.$color-forest-900;
-}
+
 
 .site-footer {
   margin-top: variables.$space-6;
@@ -385,16 +383,18 @@ img {
   display: inline-flex;
   align-items: center;
   gap: variables.$space-2;
-  color: rgba(246, 242, 233, 0.92);
+  color: variables.$color-white;
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: variables.$color-stone-200;
+    text-decoration: underline;
+    outline: none;
+  }
 }
 
-.site-footer__link:hover,
-.site-footer__link:focus-visible {
-  color: variables.$color-white;
-  text-decoration: underline;
-  outline: none;
-}
+
 
 .site-footer__copyright {
   width: min(100% - variables.$space-4, variables.$container-max-width);

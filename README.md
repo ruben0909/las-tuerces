@@ -86,3 +86,15 @@ src/
 ## Autor
 
 Ruben Infante
+
+## Licencias
+- https://es.wikipedia.org/wiki/Archivo:Las_tuerces_01.jpg
+  - Creative Commons Attribution-Share Alike 4.0 International. 
+- https://es.wikipedia.org/wiki/Archivo:Las_Tuerces_02.jpg
+  - Creative Commons Attribution-Share Alike 4.0 International. 
+- https://commons.wikimedia.org/wiki/File:Las_tuerces_03.jpg
+  - Creative Commons Attribution-Share Alike 4.0 International. 
+- https://commons.wikimedia.org/wiki/File:Las_tuerces_04.jpg
+  - Creative Commons Attribution-Share Alike 4.0 International. 
+- https://es.wikipedia.org/wiki/Archivo:Las_Tuerces_02.jpg
+  - Creative Commons Attribution-Share Alike 4.0 International. 
