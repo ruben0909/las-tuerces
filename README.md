@@ -2,8 +2,6 @@
 
 Sitio web academico sobre el Paisaje Natural de Las Tuerces (Palencia), desarrollado para la asignatura Herramientas HTML y CSS II.
 
-El proyecto parte de UOC Boilerplate, pero su contenido, estructura visual y funcionalidades estan adaptados a una landing informativa y de divulgacion turistica.
-
 ## Objetivo
 
 Crear una web de una sola pagina que presente Las Tuerces con una experiencia clara y responsive, incluyendo:
